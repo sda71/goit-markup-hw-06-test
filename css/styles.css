@@ -763,9 +763,9 @@ textarea::placeholder {
 .input-icon-policy {
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
-  /* width: 16px; */
-  /* height: 16px; */
-  /* padding: 2.75px 1.75px; */
+  width: 16px;
+  height: 16px;
+  padding: 2.75px 1.75px;
   fill: #f4f4fd;
   transition: background-color 250ms var(--transition-func),
     border-color 250ms var(--transition-func);
@@ -774,7 +774,6 @@ textarea::placeholder {
 .check-input-policy:checked + .input-icon-policy {
   background-color: var(--accent-color);
   border: 1.25px solid var(--accent-color);
-  fill: #f4f4fd;
 }
 .checkbox-wrapper {
   display: flex;
