@@ -624,20 +624,55 @@ body {
   flex-direction: column;
   padding: 72px 24px 24px 24px;
 }
-.form-field-checkbox {
+
+.form-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.form-field-contacts {
+  margin-bottom: 4px;
+}
+.form-label-contacts {
+}
+.input-wrapper-contacts {
+  position: relative;
+}
+.form-input-contacts {
+  width: 100%;
+  margin: 0;
+  padding: 11px 38px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a2a;
+}
+.input-icon-contacts {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.form-input-contacts:is(:hover, :focus) {
+  border-color: var(--no-active-color);
+}
+
+.form-input-contacts:is(:hover, :focus) + .input-icon-contacts {
+  fill: var(--no-active-color);
+}
+/* .form-field-checkbox {
   display: flex;
   flex-direction: row;
-}
+} */
 .form b {
   margin-bottom: 16px;
 }
-.form-field {
+/* .form-field {
   display: flex;
   flex-direction: column;
-}
-.form-contacts {
+} */
+/* .form-contacts {
   margin-bottom: 16px;
-}
-.form-contacts .form-field:not(:last-child) {
+} */
+/* .form-contacts .form-field:not(:last-child) {
   margin-bottom: 8px;
-}
+} */
