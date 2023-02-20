@@ -774,6 +774,7 @@ textarea::placeholder {
 .check-input-policy:checked + .input-icon-policy {
   background-color: var(--accent-color);
   border: 1.25px solid var(--accent-color);
+  fill: #f4f4fd;
 }
 .checkbox-wrapper {
   display: flex;
