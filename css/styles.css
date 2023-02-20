@@ -72,7 +72,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  /* outline: 2px solid orange; */
 }
 .section {
   padding-top: 120px;
@@ -136,16 +135,16 @@ body {
   margin-right: 120px;
 }
 .foot-social {
+  margin-right: 80px;
 }
 .foot-social-title {
   display: block;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  color: #ffffff;
-  margin-bottom: 16px;
+  color: var(--main-background-color);
 }
 .foot-list {
   display: flex;
@@ -165,13 +164,63 @@ body {
   transition: background-color 250ms var(--transition-func);
 }
 .foot-icon {
-  color: #ffffff;
+  color: var(--main-background-color);
 }
 .foot-link:hover,
 .foot-link:focus {
   background: var(--icon-accent);
 }
-/* ------------ Site NAV ---------------- */
+/* --------------------------------FOOTER-FORM-------------------------- */
+.form-foot {
+  display: flex;
+  flex-direction: column;
+}
+.form-foot-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.form-foot-input {
+  margin-right: 24px;
+}
+.form-foot-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff4d;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.form-foot-wrapper {
+  display: flex;
+}
+.form-foot-btn {
+  position: relative;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 64px 8px 24px;
+  letter-spacing: 0.04em;
+  color: var(--main-background-color);
+  background-color: var(--no-active-color);
+  cursor: pointer;
+  transition: background-color 250ms var(--transition-func);
+}
+
+.form-foot-icon {
+  position: absolute;
+  right: 24px;
+  fill: var(--main-background-color);
+}
+.form-foot-btn:is(:hover, :focus) {
+  background-color: var(--accent-color);
+}
+
+/* ---------------------------------------SITE-NAV ------------------------------- */
 
 .main-nav,
 .page-nav,
@@ -648,6 +697,7 @@ body {
   border-radius: 4px;
   transition: border-color 250ms var(--transition-func);
 }
+
 .input-icon-contacts {
   position: absolute;
   top: 50%;
@@ -678,7 +728,6 @@ textarea::placeholder {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
