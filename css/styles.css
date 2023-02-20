@@ -617,3 +617,27 @@ body {
   fill: #ffffff;
   border: none;
 }
+
+/* -------------------------------------FORM------------------------------------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 24px 24px 24px;
+}
+.form-field-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.form b {
+  margin-bottom: 16px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-contacts {
+  margin-bottom: 16px;
+}
+.form-contacts .form-field:not(:last-child) {
+  margin-bottom: 8px;
+}
