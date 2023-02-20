@@ -571,24 +571,39 @@
                 </svg>
               </div>
             </div>
-
-            <div class="form-field">
+            <div class="form-field-comments">
               <label for="comment">Comment</label>
               <textarea
                 name="comment"
                 id="comment"
                 placeholder="Text input"
+                class="textarea-comments"
               ></textarea>
             </div>
           </div>
-          <div class="form-field form-field-checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
+
+          <div class="form-field-policy">
+            <label for="policy" class="form-label-policy">
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  class="check-input-policy visually-hidden"
+                />
+                <svg width="10" height="8" class="input-icon-policy">
+                  <use href="/images/icons.svg#icon-click1"></use>
+                </svg>
+              </div>
+
+              <span>
+                I accept the terms and conditions of the
+                <a href=""> Privacy Policy</a>
+              </span>
+            </label>
           </div>
 
-          <button type="submit">Send</button>
+          <button type="submit" class="form-send-btn">Send</button>
         </form>
       </div>
     </div>
